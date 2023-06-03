@@ -20,7 +20,7 @@ function YGOCard({card}) {
         </div>
         <div className="extra content">
           <span>
-            <i className="icon heartbeat red" />
+            {/* <i className="icon heartbeat red" /> */}
             {card.type}
           </span>
         </div>
