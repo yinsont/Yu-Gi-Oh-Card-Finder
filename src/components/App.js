@@ -1,13 +1,11 @@
 import {React, useEffect, useState} from "react";
-import PokemonPage from "./PokemonPage";
-
-
+import YGOPage from "./YGOPage";
 
 function App() {
 
   return (
     <div className="App">
-      <PokemonPage/>
+      <YGOPage/>
     </div>
   );
 }

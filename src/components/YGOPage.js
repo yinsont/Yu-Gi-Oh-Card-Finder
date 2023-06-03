@@ -20,14 +20,14 @@ function YGOPage() {
     setSearch(input)
   }
 
-  const addNewYGOCard = (newYGOCard) => {
-    setYGOCards([...YGOCards, newYGOCard])
-  }
-  console.log(YGOCards)
+  // const addNewYGOCard = (newYGOCard) => {
+  //   setYGOCards([...YGOCards, newYGOCard])
+  // }
+  // console.log(YGOCards)
   // console.log(YGOCards[1].card_images[0].image_url_cropped)
-  // const filteredYGOCards = YGOCards.filter((YGOCard) => {
-  //   return YGOCard.name.toLowerCase().includes(search.toLowerCase())
-  // })
+  const filteredYGOCards = YGOCards.filter((YGOCard) => {
+    return YGOCard.name.toLowerCase().includes(search.toLowerCase())
+  })
 
   return (  
     <Container>
@@ -37,7 +37,7 @@ function YGOPage() {
       <br />
       <Search onSearch = {onSearch} search = {search}/>
       <br />
-      <YGOCardsCollection YGOCards = {YGOCards}/>
+      <YGOCardsCollection YGOCards = {filteredYGOCards}/>
     </Container>
   );
 }

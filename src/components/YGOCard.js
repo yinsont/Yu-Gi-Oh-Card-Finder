@@ -16,7 +16,7 @@ function YGOCard({card}) {
           <img src = {card.card_images[0].image_url_cropped} width = '150' max-height = '150' alt="oh no!" />
         </div>
         <div className="content">
-          <div className="header">{card.name}</div>
+          <h3 className="header">{card.name}</h3>
         </div>
         <div className="extra content">
           <span>
